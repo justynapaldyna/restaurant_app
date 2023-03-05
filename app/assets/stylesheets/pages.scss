@@ -8,11 +8,11 @@
  }
 
  .title-text {
-    font-family: 'Climate Crisis', cursive;
+    font-family: 'DM Serif Text', serif;
     color: #2283f3e7;
     text-align: center;
     font-size: 5em;
-    margin: 0;
+    margin: 200px;
  }
  .home-page {
     width: 100vw;
@@ -20,16 +20,16 @@
     background-image: url("/home.png");
     background-size: 100% 100%;
     .home-title-text {
-        font-family: 'Climate Crisis', cursive;
-        color: #2283f3e7;
+        font-family: 'DM Serif Text', serif;
+        color: #ffdf4fe7;
         text-align: center;
-        font-size: 5em;
-        margin-top: 550px;
+        font-size: 8em;
+        margin-top: 500px;
     }
  }
  .menu-page {
     width: 100vw;
-    height: 100vh;
+    
     background-image: url("/home.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@
     padding-left: 1em;
     padding-top: 0.25em;
     .link {
-        color: #FFF;
+        color: #ffdf4fe7;
     }
     .active {
         color: #2283f3e7;
