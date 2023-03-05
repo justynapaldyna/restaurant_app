@@ -7,15 +7,15 @@
 #   Character.create(name: "Luke", movie: 
 
 User.create!(email:'admin@example.com',
-            password:'admin',
-            password_confirmation: 'admin',
+            password:'admin123',
+            password_confirmation: 'admin123',
             admin: true 
 )
 
 25.times do |i|
     Product.create!(
-        name: "Pizza",
-        description: "yummy yum"
+        name: "California roll",
+        description: "Deep-fried roll with salmon, cream cheese, avocado",
         price: 11.99,
         catering: true
     )

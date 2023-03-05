@@ -1,0 +1,75 @@
+ * {
+    font-family: 'Golos Text', sans-serif;
+ }
+ .page-container {
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%
+ }
+ .title-card {
+    background-color: #111;
+    -webkit-box-shadow: 10px 10px 31px -8px rgba(181,181,181,1);
+    -moz-box-shadow: 10px 10px 31px -8px rgba(181,181,181,1);
+    box-shadow: 10px 10px 31px -8px rgba(181,181,181,1);
+ }
+ .title-text {
+    font-family: 'Climate Crisis', cursive;
+    color: #7b776c88;
+    text-align: center;
+    font-size: 6em;
+    margin: 0;
+ }
+ .home-page {
+    width: 100vw;
+    height:  100 vh;
+    background-image: url("/exterior.png");
+    background-size: 100% 100%;
+ }
+ .menu-page {
+    width: 100%;
+    height: 100%;
+    background-image: url("/menu.png");
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+ }
+ .menu-container {
+    -webkit-box-shadow: 10px 10px 31px -8px rgba(181,181,181,1);
+    -moz-box-shadow: 10px 10px 31px -8px rgba(181,181,181,1);
+    box-shadow: 10px 10px 31px -8px rgba(181,181,181,1);
+    background-color: #FFF;
+    width: 100%;
+    padding: 2em;
+ }
+ .catering-page {
+    width: 100%;
+    height: 100%;
+    background-image: url("/catering.png");
+    background-size: 100% 100%;
+ }
+ .info-page {
+    width: 100%;
+    height: 100%;
+    background-image: url("/info.png");
+    background-size: 100% 100%;
+ }
+ .reviews-page {
+    width: 100%;
+    height: 100%;
+    background-image: url("/reviews.png");
+    background-size: 100% 100%;
+ }
+ .link-container {
+    padding-left: 1em;
+    padding-top: 0.25em;
+    .link {
+        color: #FFF;
+    }
+    .active {
+        color: rgba(255,255,255,0.75)
+    }
+    .link:active {
+        color: rgba(255,255,255,0.75)
+    }
+ }
