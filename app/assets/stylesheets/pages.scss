@@ -6,33 +6,35 @@
     padding: 0px;
     max-width: 100%
  }
- .title-card {
-    background-color: #111;
-    -webkit-box-shadow: 10px 10px 31px -8px rgba(181,181,181,1);
-    -moz-box-shadow: 10px 10px 31px -8px rgba(181,181,181,1);
-    box-shadow: 10px 10px 31px -8px rgba(181,181,181,1);
- }
+
  .title-text {
     font-family: 'Climate Crisis', cursive;
-    color: #7b776c88;
+    color: #2283f3e7;
     text-align: center;
-    font-size: 6em;
+    font-size: 5em;
     margin: 0;
  }
  .home-page {
     width: 100vw;
-    height:  100 vh;
-    background-image: url("/exterior.png");
+    height:  100vh;
+    background-image: url("/home.png");
     background-size: 100% 100%;
+    .home-title-text {
+        font-family: 'Climate Crisis', cursive;
+        color: #2283f3e7;
+        text-align: center;
+        font-size: 5em;
+        margin-top: 550px;
+    }
  }
  .menu-page {
-    width: 100%;
-    height: 100%;
-    background-image: url("/menu.png");
-
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/home.png");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+
  }
  .menu-container {
     -webkit-box-shadow: 10px 10px 31px -8px rgba(181,181,181,1);
@@ -41,23 +43,24 @@
     background-color: #FFF;
     width: 100%;
     padding: 2em;
+    margin-top: 300px;
  }
  .catering-page {
-    width: 100%;
-    height: 100%;
-    background-image: url("/catering.png");
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/home.png");
     background-size: 100% 100%;
  }
  .info-page {
-    width: 100%;
-    height: 100%;
-    background-image: url("/info.png");
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/home.png");
     background-size: 100% 100%;
  }
  .reviews-page {
-    width: 100%;
-    height: 100%;
-    background-image: url("/reviews.png");
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/home.png");
     background-size: 100% 100%;
  }
  .link-container {
@@ -67,9 +70,9 @@
         color: #FFF;
     }
     .active {
-        color: rgba(255,255,255,0.75)
+        color: #2283f3e7;
     }
     .link:active {
-        color: rgba(255,255,255,0.75)
+        color: #2283f3e7;
     }
  }
