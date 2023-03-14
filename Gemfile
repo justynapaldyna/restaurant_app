@@ -7,7 +7,7 @@ ruby "3.1.2"
 gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem "sprockets-rails"
+gem 'sprockets-rails', '~> 3.0', '>= 3.0.4'
 
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
@@ -26,6 +26,10 @@ gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+
+gem "jquery-rails"
+gem 'jquery-ui-rails'
+gem "sassc-rails"
 
 gem 'devise'
 gem 'simple_form'

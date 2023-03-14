@@ -3,16 +3,19 @@ class MenuController < ApplicationController
   def index
     @page = 'menu'
     @products = Product.all
+    @order_item = current_order.order_items.new
   end
 
   def search
-    query = params[:search] 
+    query = params[:search]
 
     results = Product.where('name LIKE ?', "%#{query}%")
     if params[:filter] == 'Select Filter'
       @products = results
-    else 
+    else
+      # 'Dairy Free' -> 'Dairy_Free' -> 'dairy_free' -> :dairy_free
       symbol = params[:filter].gsub(/ /, '_').downcase!.to_sym
+      # @products = results.where(:dairy_free => true)
       @products = results.where(symbol => true)
     end
   end
