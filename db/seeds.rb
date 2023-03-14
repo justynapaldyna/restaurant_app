@@ -12,11 +12,42 @@ User.create!(email:'admin@example.com',
             admin: true 
 )
 
-25.times do |i|
-    Product.create!(
+Category.create!(heading: 'Futomaki', body: 'Classic rolls coated with nori', display: true)
+Category.create!(heading: 'Nigiri', body: 'Rice balls topped with fish', display: true)
+Category.create!(heading: 'California maki', body: 'Rich rolls with many ingredients to choose', display: true)
+
+10.times do |i|
+    california = Product.new(
         name: "California roll",
         description: "Deep-fried roll with salmon, cream cheese, avocado",
         price: 11.99,
-        catering: true
+        catering: true,
+        category: Category.find(3) 
     )
+    nigiri = Product.new(
+        name: "Salmon teryaki",
+        description: "Rice ball topped with teryaki-marinated salmon piece",
+        price: 12.99,
+        catering: true,
+        category: Category.find(2) 
+    )
+    futomaki = Product.new(
+        name: "Kanon tempura",
+        description: "Salmon fried in tempura, cucumber, kampyo, spicy mayo",
+        price: 10.99,
+        catering: true,
+        category: Category.find(1) 
+    )
+    california.image.attach(io: URI.open('https://picsum.photos/1920/1080'), filename: "#{i}_california_image.jpg")
+    nigiri.image.attach(io: URI.open('https://picsum.photos/1920/1080'), filename: "#{i}_nigiri_image.jpg")
+    futomaki.image.attach(io: URI.open('https://picsum.photos/1920/1080'), filename: "#{i}_futomaki_image.jpg")
+    if i == 5
+        california.featured = true 
+        nigiri.featured = true
+        futomaki.featured = true 
+    end
+    california.save 
+    nigiri.save 
+    futomaki.save 
+
 end
