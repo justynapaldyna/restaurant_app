@@ -9,7 +9,7 @@
                     <div class="col-4" style="padding:0">
                         <%= select_tag "filter", options_for_select(['Select Filter',
                          'Vegan', 
-                         'Vegetarian', ]), class:'custom-select' %>
+                         'Vegetarian', ]), class:'custom-select', onchange:'clickSubmit()' %>
                     
                         <%= submit_tag "Search", class:'btn btn-dark', id:'search_submit', style:'display:none' %>
                     </div>
